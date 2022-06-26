@@ -1,0 +1,41 @@
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+}
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+body{
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+.btn{
+    text-decoration: none
+}
+.box a{
+    color:black}
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+.boxes{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+
+}
+.box{
+    text-align: left;
+    background: var(--primary);
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+    border-radius: 0.6cm;
+}
+.box:hover{background-image: linear-gradient(to right,#ff194f,#42caf3);
+}
